@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Printing | Poba Graphics</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../poba-graphics.css">
+<link rel="stylesheet" href="service.css">
+</head>
+<body>
+
+<nav>
+  <a href="../poba-graphics.html" class="nav-logo">POBA <span>GRAPHICS</span></a>
+  <ul class="nav-links">
+    <li><a href="../poba-graphics.html#about">About</a></li>
+    <li><a href="../poba-graphics.html#services">Services</a></li>
+    <li><a href="../poba-graphics.html#process">Process</a></li>
+    <li><a href="../poba-graphics.html#clients">Clients</a></li>
+    <li><a href="../poba-graphics.html#contact">Contact</a></li>
+  </ul>
+  <a href="../poba-graphics.html#contact" class="nav-cta">Get a Quote</a>
+</nav>
+
+<div class="service-hero" style="background-image: url('../images/digital printing.jpeg');">
+  <div class="service-hero-overlay"></div>
+  <div class="service-hero-content fade-up">
+    <p class="service-hero-num">02</p>
+    <h1 class="service-hero-title">Digital<br><em>Printing</em></h1>
+    <p class="service-hero-sub">High-speed, high-quality digital printing — outputting work with colour in its original values and appearance.</p>
+    <a href="../poba-graphics.html#contact" class="btn-primary">Get a Quote</a>
+  </div>
+</div>
+
+<section class="service-body">
+  <div class="service-intro fade-up">
+    <div class="service-intro-text">
+      <p class="section-tag">What We Do</p>
+      <h2 class="section-title" style="color:var(--white)">Printing Is More Than Ink on Paper</h2>
+      <p style="font-size:16px; color:rgba(255,255,255,0.65); line-height:1.9; margin-bottom:20px;">We print small-scale brochures, booklets, flyers, magazines, newsletters, and other printed stationery on high-speed digital printers to ensure best quality and timely delivery.</p>
+      <p style="font-size:16px; color:rgba(255,255,255,0.65); line-height:1.9; margin-bottom:20px;">We believe that printing is more than putting ink on paper or any other printable media. Printing is outputting work with colour in its original values and appearance.</p>
+      <p style="font-size:16px; color:rgba(255,255,255,0.65); line-height:1.9;">We have a closed-loop colour control system as part of our commitment to high quality service. This system manages colour consistency across all areas of production, enabling us to provide a consistent result that closely matches your piece in a crisp HD view.</p>
+    </div>
+    <div class="service-intro-img fade-up">
+      <img src="../images/digital printing.jpeg" alt="Digital Printing">
+    </div>
+  </div>
+
+  <div class="service-features fade-up">
+    <p class="section-tag">What We Print</p>
+    <h2 class="section-title" style="color:var(--white)">Digital Print Products</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <div class="feature-name">Brochures & Flyers</div>
+        <p class="feature-desc">Single and multi-page brochures and flyers in any size, folded or flat, full colour or spot colour.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📖</div>
+        <div class="feature-name">Booklets & Magazines</div>
+        <p class="feature-desc">Saddle-stitched or perfect-bound booklets and magazines with crisp, vibrant colour reproduction.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📰</div>
+        <div class="feature-name">Newsletters</div>
+        <p class="feature-desc">Regular newsletters printed quickly and consistently to keep your audience informed and engaged.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🗂️</div>
+        <div class="feature-name">Stationery</div>
+        <p class="feature-desc">Business cards, letterheads, compliment slips, envelopes, and all corporate stationery.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎫</div>
+        <div class="feature-name">Tickets & Vouchers</div>
+        <p class="feature-desc">Event tickets, gift vouchers, and loyalty cards printed with security features if required.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📦</div>
+        <div class="feature-name">Labels & Stickers</div>
+        <p class="feature-desc">Product labels, stickers, and decals in any shape or size with durable finishes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-cta fade-up">
+    <h2 class="section-title" style="color:var(--white)">Need Something Printed?</h2>
+    <p style="font-size:16px; color:rgba(255,255,255,0.6); margin-bottom:32px; max-width:520px; margin-left:auto; margin-right:auto;">Send us your artwork or brief and we'll get it printed fast, with colour accuracy you can count on.</p>
+    <a href="../poba-graphics.html#contact" class="btn-primary">Request a Print Quote</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">POBA <span>GRAPHICS</span></div>
+  <div class="footer-tagline">DESIGN · PRINT · BRAND</div>
+  <div class="footer-copy">© 2025 Poba Graphics Supply Limited. Kampala, Uganda.</div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

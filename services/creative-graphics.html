@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Graphics Design | Poba Graphics</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../poba-graphics.css">
+<link rel="stylesheet" href="service.css">
+</head>
+<body>
+
+<nav>
+  <a href="../poba-graphics.html" class="nav-logo">POBA <span>GRAPHICS</span></a>
+  <ul class="nav-links">
+    <li><a href="../poba-graphics.html#about">About</a></li>
+    <li><a href="../poba-graphics.html#services">Services</a></li>
+    <li><a href="../poba-graphics.html#process">Process</a></li>
+    <li><a href="../poba-graphics.html#clients">Clients</a></li>
+    <li><a href="../poba-graphics.html#contact">Contact</a></li>
+  </ul>
+  <a href="../poba-graphics.html#contact" class="nav-cta">Get a Quote</a>
+</nav>
+
+<div class="service-hero" style="background-image: url('../images/profile 1.jpeg');">
+  <div class="service-hero-overlay"></div>
+  <div class="service-hero-content fade-up">
+    <p class="service-hero-num">01</p>
+    <h1 class="service-hero-title">Creative Graphics<br><em>Design</em></h1>
+    <p class="service-hero-sub">Turning communication challenges into compelling visual solutions — across every sector, at every scale.</p>
+    <a href="../poba-graphics.html#contact" class="btn-primary">Get a Quote</a>
+  </div>
+</div>
+
+<section class="service-body">
+  <div class="service-intro fade-up">
+    <div class="service-intro-text">
+      <p class="section-tag">What We Do</p>
+      <h2 class="section-title" style="color:var(--white)">Design That Drives Results</h2>
+      <p style="font-size:16px; color:rgba(255,255,255,0.65); line-height:1.9; margin-bottom:20px;">Poba Graphics provides good graphics design solutions to communication problems which improve the flow of information in society and therefore, substantially and positively affect education, social well-being, and the daily enjoyment of life. Our good graphic design solutions can also have a positive economic impact.</p>
+      <p style="font-size:16px; color:rgba(255,255,255,0.65); line-height:1.9; margin-bottom:20px;">We produce work across a wide range of sectors including Non-Government Organisations (NGO), Education Institutions, Government Organisations, Property and Construction, Financial Institutions, and Private &amp; Public sectors.</p>
+      <p style="font-size:16px; color:rgba(255,255,255,0.65); line-height:1.9;">Our meticulous attention to detail and consideration is applied to every stage of the design process, ensuring our clients receive a unique and effective design solution of the highest quality with measurable results.</p>
+    </div>
+    <div class="service-intro-img fade-up">
+      <img src="../images/profile 2.jpeg" alt="Creative Graphics Design">
+    </div>
+  </div>
+
+  <div class="service-features fade-up">
+    <p class="section-tag">What's Included</p>
+    <h2 class="section-title" style="color:var(--white)">Our Design Services</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <div class="feature-name">Logo & Brand Identity</div>
+        <p class="feature-desc">Distinctive logos and complete brand identity systems that make your business instantly recognisable.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📄</div>
+        <div class="feature-name">Marketing Collateral</div>
+        <p class="feature-desc">Brochures, flyers, posters, and all print-ready marketing materials designed to convert.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📰</div>
+        <div class="feature-name">Publication Design</div>
+        <p class="feature-desc">Magazines, annual reports, newsletters, and books laid out with precision and style.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🖼️</div>
+        <div class="feature-name">Packaging Design</div>
+        <p class="feature-desc">Product packaging that stands out on shelves and communicates your brand values at a glance.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <div class="feature-name">Social Media Graphics</div>
+        <p class="feature-desc">Scroll-stopping visuals for all social platforms, sized and optimised for maximum engagement.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏷️</div>
+        <div class="feature-name">Stationery & Signage</div>
+        <p class="feature-desc">Business cards, letterheads, envelopes, and office signage that project professionalism.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-cta fade-up">
+    <h2 class="section-title" style="color:var(--white)">Ready to Transform Your Brand?</h2>
+    <p style="font-size:16px; color:rgba(255,255,255,0.6); margin-bottom:32px; max-width:520px; margin-left:auto; margin-right:auto;">If you're interested in creating or transforming your business through strategic thinking and meticulous design, we'd love to hear from you.</p>
+    <a href="../poba-graphics.html#contact" class="btn-primary">Start a Project</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">POBA <span>GRAPHICS</span></div>
+  <div class="footer-tagline">DESIGN · PRINT · BRAND</div>
+  <div class="footer-copy">© 2025 Poba Graphics Supply Limited. Kampala, Uganda.</div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
