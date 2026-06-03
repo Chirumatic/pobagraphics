@@ -4,23 +4,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Poba Graphics Supply Limited | Design · Print · Brand</title>
+<meta name="description" content="Poba Graphics Supply Limited — creative graphics design, printing, and corporate branding company based in Kampala, Uganda. Est. 2015.">
+<meta property="og:title" content="Poba Graphics Supply Limited | Design · Print · Brand">
+<meta property="og:description" content="Creative graphics design, commercial printing, and corporate branding in Kampala, Uganda. 10+ years of excellence.">
+<meta property="og:image" content="images/landing page.jpeg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="poba-graphics.css">
 </head>
 <body>
 
 <!-- NAV -->
-<nav>
+<nav id="mainNav">
   <a href="#" class="nav-logo">POBA <span>GRAPHICS</span></a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#process">Process</a></li>
-    <li><a href="#clients">Clients</a></li>
-    <li><a href="#contact">Contact</a></li>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#services" class="nav-link">Services</a></li>
+    <li><a href="#process" class="nav-link">Process</a></li>
+    <li><a href="#clients" class="nav-link">Clients</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Get a Quote</a>
+  <div class="nav-right">
+    <a href="#contact" class="nav-cta">Get a Quote</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <ul>
+    <li><a href="#about" class="mobile-link">About</a></li>
+    <li><a href="#services" class="mobile-link">Services</a></li>
+    <li><a href="#process" class="mobile-link">Process</a></li>
+    <li><a href="#clients" class="mobile-link">Clients</a></li>
+    <li><a href="#contact" class="mobile-link">Contact</a></li>
+    <li><a href="#contact" class="mobile-link mobile-cta">Get a Quote</a></li>
+  </ul>
+</div>
 
 <!-- HERO -->
 <section id="hero">
@@ -36,7 +61,7 @@
   <div class="hero-right">
     <div class="hero-bg-shape"></div>
     <div class="hero-pattern"></div>
-    <img src="images/landing page.jpeg" alt="Poba Graphics" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.35;mix-blend-mode:luminosity;">
+    <img src="images/landing page.jpeg" alt="Poba Graphics work" loading="eager" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.45;mix-blend-mode:luminosity;">
     <div class="hero-big-text">PG</div>
     <div class="hero-badge">
       <span class="badge-year">10+</span>
@@ -76,21 +101,12 @@
   </div>
   <div class="about-right fade-up">
     <div class="about-card">
-      <img src="images/profile 1.jpeg" alt="Poba Graphics Team" style="width:100%;height:220px;object-fit:cover;margin-bottom:32px;display:block;">
+      <img src="images/profile 1.jpeg" alt="Poba Graphics Team" loading="lazy" style="width:100%;height:220px;object-fit:cover;margin-bottom:32px;display:block;">
       <p class="about-card-quote">"We will give your company an <span>extra original look</span> that you'll be proud of. Working with us will re-energise you and encourage a positive attitude to your business. We will give you a new identity that will attract compliments and admiring glances."</p>
       <div class="about-pillars">
-        <div class="pillar">
-          <div class="pillar-icon">🎨</div>
-          <div class="pillar-label">Design</div>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon">🖨️</div>
-          <div class="pillar-label">Print</div>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon">⚡</div>
-          <div class="pillar-label">Brand</div>
-        </div>
+        <div class="pillar"><div class="pillar-icon">🎨</div><div class="pillar-label">Design</div></div>
+        <div class="pillar"><div class="pillar-icon">🖨️</div><div class="pillar-label">Print</div></div>
+        <div class="pillar"><div class="pillar-icon">⚡</div><div class="pillar-label">Brand</div></div>
       </div>
     </div>
   </div>
@@ -115,8 +131,8 @@
 <!-- OUR STORY -->
 <section id="story" style="background:var(--dark); padding:80px 60px;">
   <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; max-width:1200px; margin:0 auto;">
-    <div class="fade-up" style="background:var(--purple-dark); position:relative; overflow:hidden; min-height:360px; display:flex; align-items:center; justify-content:center;">
-      <img src="images/yy.jpeg" alt="Poba Graphics Story" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.3;">
+    <div class="fade-up" style="position:relative; overflow:hidden; min-height:360px; display:flex; align-items:center; justify-content:center;">
+      <img src="images/yy.jpeg" alt="Poba Graphics Story" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.3;">
       <div style="position:absolute; inset:0; background:linear-gradient(135deg,rgba(61,18,96,0.85),rgba(123,45,191,0.7));"></div>
       <p style="font-family:'Bebas Neue',sans-serif; font-size:120px; color:rgba(255,255,255,0.06); position:absolute; bottom:-10px; right:10px; line-height:1; letter-spacing:-4px; user-select:none;">STORY</p>
       <p style="font-family:'DM Serif Display',serif; font-size:22px; color:var(--white); line-height:1.6; padding:48px; position:relative; z-index:1; font-style:italic;">"We are a bridge to your clients. We help you reach out and speak directly to them and form meaningful relationships in the community — consistently demonstrating the values that you expect in exchange for your loyalty."</p>
@@ -144,35 +160,35 @@
       <div class="service-num">01</div>
       <div class="service-icon">✏️</div>
       <div class="service-name">Creative Graphics Design</div>
-      <p class="service-desc">We provide graphic design solutions to communication problems that improve the flow of information in society. Meticulous attention to detail applied to every stage — delivering unique, effective solutions with measurable results.</p>
+      <p class="service-desc">Meticulous attention to detail applied to every stage — delivering unique, effective solutions with measurable results across NGOs, education, government, financial, and private sectors.</p>
       <span class="service-link">Learn More →</span>
     </a>
     <a href="services/digital-printing.html" class="service-card fade-up">
       <div class="service-num">02</div>
       <div class="service-icon">🖨️</div>
       <div class="service-name">Digital Printing</div>
-      <p class="service-desc">We print small-scale brochures, booklets, flyers, magazines, newsletters, and stationery on high-speed digital printers — outputting work with colour in its original values and appearance.</p>
+      <p class="service-desc">High-speed digital printing for brochures, booklets, flyers, magazines, newsletters, and stationery — outputting work with colour in its original values and appearance.</p>
       <span class="service-link">Learn More →</span>
     </a>
     <a href="services/large-format.html" class="service-card fade-up">
       <div class="service-num">03</div>
       <div class="service-icon">📐</div>
       <div class="service-name">Large Format Printing</div>
-      <p class="service-desc">Billboard skins, banners, vehicle wraps, backdrops, trade show graphics, architectural drawings, and construction plans — printed at scale with best speed and precision.</p>
+      <p class="service-desc">Billboard skins, banners, vehicle wraps, backdrops, trade show graphics, architectural drawings — printed at scale with best speed and precision.</p>
       <span class="service-link">Learn More →</span>
     </a>
     <a href="services/offset-printing.html" class="service-card fade-up">
       <div class="service-num">04</div>
       <div class="service-icon">📚</div>
       <div class="service-name">Offset Printing</div>
-      <p class="service-desc">Bulk printing of magazines, brochures, books, calendars, newsletters, and all kinds of stationery with consistent high image quality. High speed, best quality — have your work delivered in seconds.</p>
+      <p class="service-desc">Bulk printing of magazines, brochures, books, calendars, newsletters, and all kinds of stationery with consistent high image quality. High speed, best quality.</p>
       <span class="service-link">Learn More →</span>
     </a>
     <a href="services/corporate-branding.html" class="service-card fade-up">
       <div class="service-num">05</div>
-      <div class="service-icon">�</div>
+      <div class="service-icon">🏢</div>
       <div class="service-name">Corporate Branding</div>
-      <p class="service-desc">Since 2015, working with businesses from all industries — startups to international brands. We share your ambition and take huge pride in creating cutting-edge designs that get people talking about your brand.</p>
+      <p class="service-desc">From startups to international brands — no project is too big or too small. Cutting-edge designs that get people talking about your brand, with a friendly and personal touch.</p>
       <span class="service-link">Learn More →</span>
     </a>
     <a href="services/promotional-materials.html" class="service-card fade-up">
@@ -205,17 +221,51 @@
     <div class="step fade-up">
       <div class="step-circle">03</div>
       <div class="step-name">Design</div>
-      <p class="step-desc">Our creative team implements best practices in colour, typography, hierarchy of information, and positive and negative space — using the right software and tools to get the job done efficiently.</p>
+      <p class="step-desc">Our creative team implements best practices in colour, typography, hierarchy of information, and positive and negative space — using the right software and tools efficiently.</p>
     </div>
     <div class="step fade-up">
       <div class="step-circle">04</div>
       <div class="step-name">Prototype</div>
-      <p class="step-desc">We develop drafts and physical samples representing the client's idea. This stage is critical in the approval process as it visualises the actual refined product of the entire process.</p>
+      <p class="step-desc">We develop drafts and physical samples representing the client's idea. This stage is critical in the approval process as it visualises the actual refined product.</p>
     </div>
     <div class="step fade-up">
       <div class="step-circle">05</div>
       <div class="step-name">Production</div>
-      <p class="step-desc">After all approvals, artwork is forwarded to our specialised personnel in Digital, Press, Large Format and other areas. The final product is then produced and delivered to the client.</p>
+      <p class="step-desc">After all approvals, artwork is forwarded to our specialised personnel in Digital, Press, Large Format and other areas. The final product is produced and delivered to the client.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="background:var(--dark); padding:100px 60px;">
+  <div class="fade-up" style="text-align:center; margin-bottom:64px;">
+    <p class="section-tag" style="justify-content:center;">What Clients Say</p>
+    <h2 class="section-title" style="color:var(--white); max-width:600px; margin:0 auto;">Trusted. Proven. Recommended.</h2>
+  </div>
+  <div class="testimonials-grid fade-up">
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"Poba Graphics delivered our campaign materials on time and the quality was outstanding. Their attention to detail and creativity really set them apart. We keep coming back."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Communications Manager</div>
+        <div class="testimonial-org">International NGO, Kampala</div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"From concept to final print, the team was professional, responsive, and genuinely passionate about the work. Our brand identity has never looked better."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Marketing Director</div>
+        <div class="testimonial-org">Financial Institution, Uganda</div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">"The large format prints for our event were incredible — sharp, vibrant, and delivered ahead of schedule. Poba Graphics is our go-to for all printing needs."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-name">Events Coordinator</div>
+        <div class="testimonial-org">Government Organisation, Arua</div>
+      </div>
     </div>
   </div>
 </section>
@@ -225,25 +275,25 @@
   <div class="clients-header fade-up">
     <p class="section-tag">Our Clientele</p>
     <h2 class="section-title">Trusted by Leading Organisations</h2>
-    <p class="clients-sub">We have been given a chance by established organisations to handle various projects from first stage of concept development to final delivery. Our satisfied clients have liked our services and the quick response we present on every stage of their projects. No project is too big or too small for us.</p>
+    <p class="clients-sub">We have been given a chance by established organisations to handle various projects from concept development to final delivery. No project is too big or too small for us.</p>
   </div>
   <div class="clients-grid">
-    <div class="client-tile fade-up"><img src="images/clients/1.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/2.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/3.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/4.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/5.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/6.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/7.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/8.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/9.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/10.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/11.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/12.jpeg" alt="Client"></div>div>
-    <div class="client-tile fade-up"><img src="images/clients/13.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/14.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/15.jpeg" alt="Client"></div>
-    <div class="client-tile fade-up"><img src="images/clients/16.jpeg" alt="Client"></div>
+    <div class="client-tile fade-up"><img src="images/clients/1.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/2.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/3.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/4.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/5.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/6.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/7.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/8.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/9.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/10.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/11.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/12.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/13.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/14.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/15.jpeg" alt="Client" loading="lazy"></div>
+    <div class="client-tile fade-up"><img src="images/clients/16.jpeg" alt="Client" loading="lazy"></div>
   </div>
 </section>
 
@@ -252,7 +302,7 @@
   <div class="contact-left fade-up">
     <p class="section-tag">Get In Touch</p>
     <h2 class="section-title">Let's Build Something <em style="font-style:italic; color:var(--gold)">Remarkable</em></h2>
-    <p class="contact-tagline">From concept development to final delivery, we provide 100% satisfaction. Customer satisfaction is the prime concern of our business — and our services are our best sales point. Try us today for the best.</p>
+    <p class="contact-tagline">From concept development to final delivery, we provide 100% satisfaction. Customer satisfaction is the prime concern of our business — and our services are our best sales point.</p>
     <div class="contact-info">
       <div class="contact-item">
         <div class="contact-icon">📍</div>
@@ -265,45 +315,47 @@
         <div class="contact-icon">📞</div>
         <div class="contact-text">
           <strong>Phone</strong>
-          +256 392 000 434 &nbsp;|&nbsp; +256 706 084 848
+          <a href="tel:+256392000434" style="color:inherit; text-decoration:none;">+256 392 000 434</a> &nbsp;|&nbsp; <a href="tel:+256706084848" style="color:inherit; text-decoration:none;">+256 706 084 848</a>
         </div>
       </div>
       <div class="contact-item">
         <div class="contact-icon">✉️</div>
         <div class="contact-text">
           <strong>Email</strong>
-          info@pobagraphics.com
+          <a href="mailto:info@pobagraphics.com" style="color:inherit; text-decoration:none;">info@pobagraphics.com</a>
         </div>
       </div>
       <div class="contact-item">
-        <div class="contact-icon">🌐</div>
+        <div class="contact-icon">💬</div>
         <div class="contact-text">
-          <strong>Website</strong>
-          www.pobagraphics.com
+          <strong>WhatsApp</strong>
+          <a href="https://wa.me/256779084848" target="_blank" style="color:var(--gold); text-decoration:none;">Chat with us on WhatsApp →</a>
         </div>
       </div>
     </div>
   </div>
   <div class="contact-form-area fade-up">
     <div class="form-title">REQUEST A QUOTE</div>
-    <div class="form-row">
-      <div class="form-group"><input type="text" placeholder="Your Name"></div>
-      <div class="form-group"><input type="email" placeholder="Email Address"></div>
-    </div>
-    <div class="form-group"><input type="tel" placeholder="Phone Number"></div>
-    <div class="form-group">
-      <select>
-        <option value="" disabled selected>Select a Service</option>
-        <option>Creative Graphics Design</option>
-        <option>Digital Printing</option>
-        <option>Large Format Printing</option>
-        <option>Offset Printing</option>
-        <option>Corporate Branding</option>
-        <option>Promotional Materials</option>
-      </select>
-    </div>
-    <div class="form-group"><textarea placeholder="Tell us about your project..."></textarea></div>
-    <button class="btn-submit">Send Request →</button>
+    <form id="contactForm" action="https://formspree.io/f/xpwzejbq" method="POST">
+      <div class="form-row">
+        <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
+        <div class="form-group"><input type="email" name="email" placeholder="Email Address" required></div>
+      </div>
+      <div class="form-group"><input type="tel" name="phone" placeholder="Phone Number"></div>
+      <div class="form-group">
+        <select name="service" required>
+          <option value="" disabled selected>Select a Service</option>
+          <option>Creative Graphics Design</option>
+          <option>Digital Printing</option>
+          <option>Large Format Printing</option>
+          <option>Offset Printing</option>
+          <option>Corporate Branding</option>
+          <option>Promotional Materials</option>
+        </select>
+      </div>
+      <div class="form-group"><textarea name="message" placeholder="Tell us about your project..."></textarea></div>
+      <button type="submit" class="btn-submit" id="submitBtn">Send Request →</button>
+    </form>
   </div>
 </section>
 
@@ -314,12 +366,21 @@
   <div class="footer-copy">© 2025 Poba Graphics Supply Limited. Kampala, Uganda.</div>
 </footer>
 
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/256779084848" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="white" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+    <path d="M16 1C7.716 1 1 7.716 1 16c0 2.628.671 5.1 1.845 7.261L1 31l8.01-1.818A14.94 14.94 0 0016 31c8.284 0 15-6.716 15-15S24.284 1 16 1zm0 27.333a12.27 12.27 0 01-6.29-1.73l-.45-.267-4.758 1.08 1.13-4.626-.294-.476A12.267 12.267 0 013.667 16C3.667 9.189 9.189 3.667 16 3.667S28.333 9.189 28.333 16 22.811 28.333 16 28.333zm6.735-9.184c-.369-.184-2.183-1.077-2.522-1.2-.338-.123-.585-.184-.831.184-.246.369-.954 1.2-1.17 1.447-.215.246-.43.277-.8.092-.369-.184-1.558-.574-2.967-1.83-1.097-.977-1.837-2.184-2.052-2.553-.215-.369-.023-.568.162-.752.166-.165.369-.43.553-.645.185-.215.246-.369.369-.615.123-.246.062-.461-.031-.645-.092-.184-.831-2.003-1.138-2.74-.3-.72-.605-.623-.831-.634l-.708-.012c-.246 0-.645.092-.983.461-.338.369-1.292 1.262-1.292 3.077s1.323 3.569 1.507 3.815c.184.246 2.603 3.976 6.308 5.576.882.38 1.569.607 2.104.777.884.281 1.689.242 2.325.147.709-.106 2.183-.893 2.49-1.755.308-.862.308-1.6.216-1.755-.093-.154-.338-.246-.708-.43z"/>
+  </svg>
+</a>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
 <script>
-  // Marquee content
+  // Marquee
   const items = ['Creative Design','Digital Printing','Large Format','Offset Printing','Corporate Branding','Promotional Materials','10 Years Experience','Based in Kampala'];
   const track = document.getElementById('marqueeTrack');
-  const repeated = [...items, ...items, ...items, ...items];
-  repeated.forEach(t => {
+  [...items,...items,...items,...items].forEach(t => {
     const el = document.createElement('span');
     el.className = 'marquee-item';
     el.innerHTML = `<span class="marquee-dot">✦</span>${t}`;
@@ -335,16 +396,68 @@
     observer.observe(el);
   });
 
-  // Nav shrink on scroll
+  // Nav shrink + active link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
   window.addEventListener('scroll', () => {
-    document.querySelector('nav').style.padding = window.scrollY > 60 ? '12px 60px' : '20px 60px';
+    const nav = document.querySelector('nav');
+    nav.style.padding = window.scrollY > 60 ? '12px 60px' : '20px 60px';
+    // active link
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+    navLinks.forEach(a => {
+      a.classList.remove('active');
+      if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+    });
+    // scroll-to-top visibility
+    document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
   });
 
-  // Form submit
-  document.querySelector('.btn-submit').addEventListener('click', function() {
-    this.textContent = '✓ Message Sent!';
-    this.style.background = '#2ECC71';
-    setTimeout(() => { this.textContent = 'Send Request →'; this.style.background = ''; }, 3000);
+  // Mobile hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileClose = document.getElementById('mobileClose');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+  mobileClose.addEventListener('click', closeMenu);
+  document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeMenu));
+  function closeMenu() {
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Scroll to top
+  document.getElementById('scrollTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Formspree contact form
+  const form = document.getElementById('contactForm');
+  const btn = document.getElementById('submitBtn');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        btn.textContent = '✓ Message Sent!';
+        btn.style.background = '#2ECC71';
+        form.reset();
+        setTimeout(() => { btn.textContent = 'Send Request →'; btn.style.background = ''; btn.disabled = false; }, 4000);
+      } else {
+        throw new Error();
+      }
+    } catch {
+      btn.textContent = 'Failed — Try Again';
+      btn.style.background = '#E74C3C';
+      btn.disabled = false;
+      setTimeout(() => { btn.textContent = 'Send Request →'; btn.style.background = ''; }, 3000);
+    }
   });
 </script>
 </body>
